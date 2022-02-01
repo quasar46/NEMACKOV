@@ -1,0 +1,16 @@
+.questions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions__item {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 20px);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 60px 70px;
+  border-radius: 16px;
+  box-shadow: 0px 6.16296px 20.7037px rgba(16, 24, 100, 0.0425185),
+    0px 1.3037px 5.2963px rgba(16, 24, 100, 0.0274815);
+  margin-top: -60px;
+}
