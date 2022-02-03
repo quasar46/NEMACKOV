@@ -1,0 +1,41 @@
+.price__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 360px) {
+    flex-direction: column;
+  }
+}
+
+.price__picture {
+  max-width: 860px;
+  width: 100%;
+  flex: 1 0 auto;
+  margin-left: 140px;
+  border-radius: 16px;
+  overflow: hidden;
+  @media (max-width: 1366px) {
+    max-width: 643px;
+    margin-left: 100px;
+  }
+  @media (max-width: 1024px) {
+    max-width: 472px;
+    margin-left: 80px;
+  }
+  @media (max-width: 360px) {
+    margin-left: 0;
+    margin-bottom: 20px;
+    order: 0;
+  }
+}
+
+.price__text {
+  font-size: 24px;
+  line-height: 1.5;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+  @media (max-width: 360px) {
+    order: 1;
+  }
+}

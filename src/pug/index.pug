@@ -6,6 +6,7 @@ html(lang="ru")
             include modules/header
             .page
                 section.hero 
+                    img.hero__picture(src="img/hero-mobile.png" alt="")
                     .hero__wrapper._container 
                         h2.hero__title Более 10 лет развития медицинских центров
                         p.hero__subtitle Составим антикризисный план для развития вашей организации
@@ -13,29 +14,110 @@ html(lang="ru")
 
                 section.questions._container 
                     .questions__item
-                        .questions__header 
-                            img(src="img/icons/q1.svg" alt="")
-                            p Зачем кризис-менеджмент пункт 1
+                        .questions__header
+                            .questions__picture 
+                                img(src="img/icons/q1.svg" alt="")
+                            h2 Зачем кризис-менеджмент 1
+                        .questions__text
+                            p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение 
+                    .questions__item
+                        .questions__header
+                            .questions__picture 
+                                img(src="img/icons/q2.svg" alt="")
+                            h2 Зачем кризис-менеджмент 2
                         .questions__text 
                             p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение 
                     .questions__item
                         .questions__header 
-                            img(src="img/icons/q2.svg" alt="")
-                            p Зачем кризис-менеджмент пункт 2
-                        .questions__text 
-                            p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение 
-                    .questions__item
-                        .questions__header 
-                            img(src="img/icons/q3.svg" alt="")
-                            p Зачем кризис-менеджмент пункт 3
+                            .questions__picture
+                                img(src="img/icons/q3.svg" alt="")
+                            h2 Зачем кризис-менеджмент 3
                         .questions__text 
                             p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение 
 
                 section.about
                     .about__wrapper._container
-                        
+                        .about__content 
+                            h2.title.about__title О компании
+                            .about__text
+                                p Сложно сказать, почему некоторые особенности внутренней политики могут быть смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности. Безусловно, высокое качество позиционных исследований обеспечивает широкому кругу (специалистов) участие в формировании анализа  существующих паттернов поведения. Каждый из нас понимает очевидную вещь: высокое.
+                            button.button.about__button Узнать подробнее
+                        .about__picture 
+                            img(src="img/img05.jpg" alt="")
 
-                    
+                section.services
+                    .services__wrapper._container
+                        h2.title.services__title Наши услуги
+                        .services__content.services-slider
+                            .services__item
+                                .services__header
+                                    .services__picture
+                                        img(src="img/icons/s1.svg" alt="")
+                                    h2 Услуга номер 1
+                                .services__text 
+                                    p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение
+                            .services__item
+                                .services__header
+                                    .services__picture
+                                        img(src="img/icons/s2.svg" alt="")
+                                    h2 Услуга номер 2
+                                .services__text
+                                    p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение
+                            .services__item
+                                .services__header
+                                    .services__picture 
+                                        img(src="img/icons/s3.svg" alt="")
+                                    h2 Услуга номер 3
+                                .services__text 
+                                    p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение
+                            .services__item
+                                .services__header
+                                    .services__picture 
+                                        img(src="img/icons/s4.svg" alt="")
+                                    h2 Услуга номер 1
+                                .services__text 
+                                    p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение
+                            .services__item
+                                .services__header
+                                    .services__picture 
+                                        img(src="img/icons/s5.svg" alt="")
+                                    h2 Услуга номер 3
+                                .services__text 
+                                    p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение
+                            a.services__item(href="")
+                                p Все услуги
+                                img(src="img/icons/arrow.svg" alt="")
+
+                section.projects
+                    .projects__wrapper._container  
+                        .title.projects__title Проекты
+                        .projects__content.projects-slider
+                            a.projects__item(href="") 
+                                img(src="img/projects/item1.png" alt="")
+                                .projects__footer
+                                    span Неомед
+                                    img(src="img/icons/arrow-black.svg" alt="")
+                            a.projects__item(href="") 
+                                img(src="img/projects/item2.png" alt="")
+                                .projects__footer
+                                    span Меднанопрофи
+                                    img(src="img/icons/arrow-black.svg" alt="")
+                            a.projects__item(href="") 
+                                img(src="img/projects/item3.png" alt="")
+                                .projects__footer
+                                    span Неомед
+                                    img(src="img/icons/arrow-black.svg" alt="")
+                            a.projects__item(href="") 
+                                p 
+                                    span Все проекты
+                                    img(src="img/icons/arrow.svg" alt="")
+
+                include modules/feedback
+                
+
+
+
+
 
             include modules/footer
         include modules/script

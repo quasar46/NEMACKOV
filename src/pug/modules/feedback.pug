@@ -1,0 +1,14 @@
+section.feedback 
+    .feedback__wrapper._container 
+        .feedback__content 
+            h2.title.feedback__title Оставьте заявку на консультацию
+            .feedback__text 
+                p Сложно сказать, почему некоторые особенности внутренней политики могут быть смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности
+            form.feedback__form(action="") 
+                input(type="text" placeholder="Ваше имя")
+                input(type="text" placeholder="Номер телефона")
+                input(type="checkbox" id="consent" checked)
+                label(for="consent") Даю согласие на обработку персональных данных
+                button.button.feedback__button(type="submit") Отправить заявку
+        .feedback__picture 
+            img(src="img/img06.jpg" alt="")

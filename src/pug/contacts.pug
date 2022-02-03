@@ -1,0 +1,39 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        .wrapper
+            include modules/header
+            .page
+                .breadcrumbs._container
+                    a(href="index.html")  Главная
+                    img(src="img/icons/line.svg" alt="")
+                    a Контакты
+
+                section.contacts-info._container 
+                    .title.contacts-info__title Контактная информация
+                    .contacts-info__wrapper 
+                        ul.contacts-info__content 
+                            li
+                                img(src="img/icons/marker.svg" alt="")
+                                span Адрес
+                                p Ростов-на-Дону, Россия, 344002, Большая Садовая улица, 47.
+                            li 
+                                img(src="img/icons/phone.svg" alt="")
+                                span Телефон
+                                a(href="teL:+79896250099")  +7 989 625 00 99
+                            li 
+                                img(src="img/icons/mail.svg" alt="")
+                                span Электронная почта
+                                a(href="mailto:Dnemahov@yandex.ru") Dnemahov@yandex.ru
+                        .contacts-info__map 
+                            <iframe src="https://yandex.ru/map-widget/v1/-/CCU5aZsNgC" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+
+                include modules/feedback
+
+
+
+
+
+            include modules/footer
+        include modules/script
