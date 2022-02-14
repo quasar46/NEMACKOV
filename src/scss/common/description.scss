@@ -6,7 +6,7 @@
 .description__item {
   width: calc(100% / 2);
   margin-bottom: 80px;
-  @media (max-width: 1024px) {
+  @media (max-width: 1365px) {
     width: 100%;
     margin-bottom: 40px;
   }
@@ -23,10 +23,10 @@
     color: rgba(27, 39, 52, 0.9);
     text-transform: uppercase;
     margin-bottom: 20px;
-    @media (max-width: 1024px) {
+    @media (max-width: 1365px) {
       font-size: 20px;
     }
-    @media (max-width: 360px) {
+    @media (max-width: 1023px) {
       margin-bottom: 10px;
     }
   }
@@ -35,9 +35,12 @@
     font-weight: 500;
     color: #2b5278;
     text-transform: uppercase;
-    @media (max-width: 1024px) {
+    @media (max-width: 1365px) {
       font-size: 30px;
     }
+  }
+  @media (max-width: 1023px) {
+    padding-left: 90px;
   }
 }
 
@@ -62,7 +65,7 @@
   p {
     line-height: 1.5;
     font-size: 24px;
-    @media (max-width: 1024px) {
+    @media (max-width: 1365px) {
       font-size: 20px;
     }
   }
@@ -72,7 +75,7 @@
       margin-left: 30px;
       line-height: 1.5;
       font-size: 24px;
-      @media (max-width: 1024px) {
+      @media (max-width: 1365px) {
         font-size: 20px;
       }
     }

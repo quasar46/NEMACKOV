@@ -3,7 +3,7 @@
 
 .services-inner__title {
   margin-bottom: 80px;
-  @media (max-width: 1024px) {
+  @media (max-width: 1365px) {
     margin-bottom: 50px;
   }
 }
@@ -11,7 +11,7 @@
 .services-inner__item {
   display: flex;
   margin-bottom: 140px;
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     flex-direction: column;
     margin-bottom: 80px;
   }
@@ -29,23 +29,23 @@
   }
   &:nth-child(even) {
     margin-left: 40px;
-    @media (max-width: 360px) {
+    @media (max-width: 1023px) {
       margin-left: 0;
     }
   }
   &:nth-child(odd) {
     margin-right: 40px;
-    @media (max-width: 360px) {
+    @media (max-width: 1023px) {
       margin-right: 0;
     }
   }
-  @media (max-width: 1366px) {
+  @media (max-width: 1919px) {
     max-width: 622px;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1365px) {
     max-width: 451px;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     height: 310px;
     flex: auto;
     margin-bottom: 25px;
@@ -66,12 +66,12 @@
       font-size: 24px;
       font-weight: 600;
       text-transform: uppercase;
-      @media (max-width: 1024px) {
+      @media (max-width: 1365px) {
         font-size: 20px;
       }
     }
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     order: 1;
   }
 }
@@ -89,10 +89,10 @@
   p {
     margin-bottom: 10px;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1365px) {
     font-size: 16px;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     display: none;
   }
 }

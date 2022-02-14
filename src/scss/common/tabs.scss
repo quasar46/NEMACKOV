@@ -1,0 +1,10 @@
+.tabs__content {
+  display: none;
+  &.active {
+    display: flex;
+  }
+}
+
+.tabs__btns {
+    display: flex !important;
+}

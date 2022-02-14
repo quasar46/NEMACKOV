@@ -4,11 +4,11 @@
   padding-top: 190px;
   padding-bottom: 285px;
   margin-bottom: 0;
-  @media (max-width: 1366px) {
+  @media (max-width: 1919px) {
     padding-top: 90px;
     padding-bottom: 160px;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 80px;
@@ -17,13 +17,13 @@
 
 .hero__wrapper {
   padding-right: 50%;
-  @media (max-width: 1366px) {
+  @media (max-width: 1919px) {
     padding-right: 40%;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1365px) {
     padding-right: 30%;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     padding-right: 10px;
   }
 }
@@ -34,11 +34,11 @@
   line-height: 1.1;
   margin-bottom: 30px;
   letter-spacing: -2px;
-  @media (max-width: 1024px) {
+  @media (max-width: 1365px) {
     font-size: 60px;
     margin-bottom: 20px;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     font-size: 40px;
     text-align: center;
   }
@@ -48,18 +48,18 @@
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 30px;
-  @media (max-width: 1024px) {
+  @media (max-width: 1365px) {
     font-size: 20px;
     margin-bottom: 20px;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     text-align: center;
   }
 }
 
 .hero__button {
   min-width: 400px;
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     width: 100%;
     min-width: auto;
   }
@@ -67,7 +67,7 @@
 
 .hero__picture {
   display: none;
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     display: block;
     margin-bottom: 20px;
   }

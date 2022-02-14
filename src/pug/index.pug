@@ -12,28 +12,7 @@ html(lang="ru")
                         p.hero__subtitle Составим антикризисный план для развития вашей организации
                         button.button.hero__button Заказать консультацию
 
-                section.questions._container 
-                    .questions__item
-                        .questions__header
-                            .questions__picture 
-                                img(src="img/icons/q1.svg" alt="")
-                            h2 Зачем кризис-менеджмент 1
-                        .questions__text
-                            p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение 
-                    .questions__item
-                        .questions__header
-                            .questions__picture 
-                                img(src="img/icons/q2.svg" alt="")
-                            h2 Зачем кризис-менеджмент 2
-                        .questions__text 
-                            p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение 
-                    .questions__item
-                        .questions__header 
-                            .questions__picture
-                                img(src="img/icons/q3.svg" alt="")
-                            h2 Зачем кризис-менеджмент 3
-                        .questions__text 
-                            p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение 
+                include modules/questions
 
                 section.about
                     .about__wrapper._container
@@ -41,7 +20,7 @@ html(lang="ru")
                             h2.title.about__title О компании
                             .about__text
                                 p Сложно сказать, почему некоторые особенности внутренней политики могут быть смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности. Безусловно, высокое качество позиционных исследований обеспечивает широкому кругу (специалистов) участие в формировании анализа  существующих паттернов поведения. Каждый из нас понимает очевидную вещь: высокое.
-                            button.button.about__button Узнать подробнее
+                            a(href="about-inner.html").button.about__button Узнать подробнее
                         .about__picture 
                             img(src="img/img05.jpg" alt="")
 
@@ -85,35 +64,14 @@ html(lang="ru")
                                 .services__text 
                                     p В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение
                             a.services__item(href="")
-                                p Все услуги
-                                img(src="img/icons/arrow.svg" alt="")
+                                .services__inner
+                                    p Все услуги
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.4948 0.833008L9.61479 2.71301L17.0548 10.1663H0.828125V12.833H17.0548L9.61479 20.2863L11.4948 22.1663L22.1615 11.4997L11.4948 0.833008Z" fill="#1B2734" fill-opacity="0.3"/></svg>
 
-                section.projects
-                    .projects__wrapper._container  
-                        .title.projects__title Проекты
-                        .projects__content.projects-slider
-                            a.projects__item(href="") 
-                                img(src="img/projects/item1.png" alt="")
-                                .projects__footer
-                                    span Неомед
-                                    img(src="img/icons/arrow-black.svg" alt="")
-                            a.projects__item(href="") 
-                                img(src="img/projects/item2.png" alt="")
-                                .projects__footer
-                                    span Меднанопрофи
-                                    img(src="img/icons/arrow-black.svg" alt="")
-                            a.projects__item(href="") 
-                                img(src="img/projects/item3.png" alt="")
-                                .projects__footer
-                                    span Неомед
-                                    img(src="img/icons/arrow-black.svg" alt="")
-                            a.projects__item(href="") 
-                                p 
-                                    span Все проекты
-                                    img(src="img/icons/arrow.svg" alt="")
 
+                include modules/projects
                 include modules/feedback
-                
+
 
 
 

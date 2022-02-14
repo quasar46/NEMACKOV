@@ -1,7 +1,7 @@
 .questions {
   display: flex;
   justify-content: space-between;
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     flex-direction: column;
   }
 }
@@ -17,18 +17,18 @@
     0px 1.3037px 5.2963px rgba(16, 24, 100, 0.0274815);
   margin-top: -60px;
   &:last-child {
-    @media (max-width: 360px) {
+    @media (max-width: 1023px) {
       margin-bottom: 0;
     }
   }
-  @media (max-width: 1366px) {
+  @media (max-width: 1919px) {
     padding: 40px 30px;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1365px) {
     padding: 20px;
     margin-top: -30px;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     margin-top: 0;
     width: 100%;
     margin-bottom: 20px;
@@ -42,7 +42,7 @@
   h2 {
     font-weight: 600;
     font-size: 24px;
-    @media (max-width: 1024px) {
+    @media (max-width: 1365px) {
       font-size: 20px;
     }
   }
@@ -52,7 +52,7 @@
   p {
     line-height: 1.5;
     font-weight: 300;
-    @media (max-width: 1024px) {
+    @media (max-width: 1365px) {
       font-size: 14px;
     }
   }
@@ -70,7 +70,7 @@
     0px 1.3037px 5.2963px rgba(16, 24, 100, 0.0274815);
   border-radius: 16px;
   margin-right: 30px;
-  @media (max-width: 1366px) {
+  @media (max-width: 1919px) {
     margin-right: 20px;
   }
 }

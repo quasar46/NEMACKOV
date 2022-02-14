@@ -1,0 +1,65 @@
+// .case__block {
+//   display: flex;
+// }
+
+.case {
+  // padding-bottom: 150px;
+
+  @media (max-width: 1365px) {
+    // padding-bottom: 110px;
+  }
+  @media (max-width: 1023px) {
+    // padding-bottom: 0;
+  }
+}
+
+.case__slider {
+  @media (max-width: 1023px) {
+    padding-bottom: 200px;
+  }
+}
+
+.case__slider {
+  margin-bottom: 280px;
+  .slick-arrow {
+    position: absolute;
+    border: 2px solid #2b5278;
+    border-radius: 16px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 400px;
+    height: 68px;
+    top: calc(100% + 80px);
+    @media (max-width: 1023px) {
+      left: 0;
+      width: 100%;
+    }
+  }
+  .slick-next {
+    // bottom: 0;
+    right: 0;
+    background-color: #2b5278;
+    color: #fff;
+    @media (max-width: 1023px) {
+      bottom: 0;
+      top: auto;
+    }
+  }
+  .slick-prev {
+    // bottom: 0;
+    left: 0;
+    color: #2b5278;
+    @media (max-width: 1023px) {
+      bottom: 100px;
+      top: auto;
+    }
+  }
+  @media (max-width: 1365px) {
+    margin-bottom: 220px;
+  }
+  @media (max-width: 1023px) {
+    margin-bottom: 80px;
+  }
+}

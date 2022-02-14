@@ -7,4 +7,21 @@
   font-weight: 600;
   padding: 0 10px;
   cursor: pointer;
+  &:hover {
+    background-color: #99c0e6;
+    box-shadow: 0px 6.16296px 20.7037px rgba(16, 24, 100, 0.14),
+      0px 1.3037px 5.2963px rgba(16, 24, 100, 0.0274815);
+  }
+  &:active {
+    background-color: #173e64;
+  }
+}
+
+.hover {
+  &:hover {
+    background-color: #99c0e6;
+  }
+  &:active {
+    background-color: #173e64;
+  }
 }

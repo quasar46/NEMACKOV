@@ -10,6 +10,9 @@
   }
   a[href] {
     color: #2b5278;
+    &:hover {
+      color: #99c0e6;
+    }
   }
   img {
     margin: 0 10px;

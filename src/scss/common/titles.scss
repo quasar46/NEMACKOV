@@ -3,12 +3,27 @@
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 500;
-  @media (max-width: 1024px) {
+  @media (max-width: 1365px) {
     font-size: 40px;
     margin-bottom: 20px;
   }
-  @media (max-width: 360px) {
+  @media (max-width: 1023px) {
     font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.title-inner {
+  color: rgba(27, 39, 52, 0.9);
+  font-size: 36px;
+  font-weight: 600;
+  // margin-bottom: 30px;
+  margin-bottom: 80px;
+  @media (max-width: 1365px) {
+    font-size: 30px;
+  }
+  @media (max-width: 1023px) {
+    // margin-bottom: 20px;
     margin-bottom: 40px;
   }
 }

@@ -114,4 +114,4 @@ gulp.task("clean", function () {
 });
 
 gulp.task("build", gulp.series("clean", "fonts", "css", "img", "pug", "js"));
-gulp.task("start", gulp.series("build", "server"));
+gulp.task("start", gulp.series("clean", "build", "server"));

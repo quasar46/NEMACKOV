@@ -1,0 +1,25 @@
+.statistic__caption {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2b5278;
+  text-transform: uppercase;
+  @media (max-width: 1023px) {
+    font-size: 20px;
+  }
+}
+
+.statistic__graphic {
+  @media (max-width: 1023px) {
+    min-width: 100%;
+    display: flex;
+    min-height: 280px;
+    overflow-x: auto;
+    img {
+      min-width: 900px;
+    }
+  }
+}
+
+.statistic__graphic::-webkit-scrollbar {
+  display: none;
+}

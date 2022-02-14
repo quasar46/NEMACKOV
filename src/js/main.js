@@ -11,6 +11,8 @@ $(document).ready(function () {
 
   if (window.innerWidth < 361) {
     $('.about__picture img').appendTo('.about__content');
+    $('.about-inner__picture').appendTo('.about-inner__content');
+    // $('.case-block__picture').appendTo('.case-block__content');
   }
 
   // if (window.innerWidth < 1367) {
@@ -50,17 +52,27 @@ $(document).ready(function () {
     }]
   })
 
-  $('.cases__header').slick({
+  // $('.cases__header').slick({
+  //   infinite: true,
+  //   slidesToShow: 2,
+  //   slidesToScroll: 1,
+  //   arrows: false,
+  //   dots: false,
+  //   mobileFirst: true,
+  //   responsive: [{
+  //     breakpoint: 361,
+  //     settings: 'unslick'
+  //   }]
+  // })
+
+  $('.case__slider').slick({
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     dots: false,
-    mobileFirst: true,
-    responsive: [{
-      breakpoint: 361,
-      settings: 'unslick'
-    }]
+    prevArrow: "<button class='slick-arrow slick-prev'>предыдущий проект</button>",
+    nextArrow: "<button class='slick-arrow slick-next'>следующий проект</button>",
   })
 
   if (window.innerWidth < 361) {
@@ -68,4 +80,18 @@ $(document).ready(function () {
       $(this).next().slideToggle();
     })
   }
+
+  $('.tabs__btns').on('click', 'button:not(.active)', function () {
+    $('.tabs__all-content').removeClass('active');
+    $(this).addClass('active').siblings().removeClass('active');
+    $(this).closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+  })
+
+  $('.tabs__all-content').on('click', function () {
+    $(this).addClass('active');
+    $('.tabs__content').addClass('active');
+    $('.tabs__btns button').removeClass('active');
+  })
+
+
 });
