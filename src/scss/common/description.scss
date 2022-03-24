@@ -3,6 +3,11 @@
   flex-wrap: wrap;
 }
 
+.description__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .description__item {
   width: calc(100% / 2);
   margin-bottom: 80px;

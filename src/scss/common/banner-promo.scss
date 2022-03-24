@@ -1,0 +1,8 @@
+.banner-promo {
+    background-image: url("../img/banner-promo.jpg");
+    @media (max-width: 1023px) {
+        background-position: 0 90px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

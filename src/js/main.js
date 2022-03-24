@@ -75,6 +75,27 @@ $(document).ready(function () {
     nextArrow: "<button class='slick-arrow slick-next'>следующий проект</button>",
   })
 
+  $('.reviews__slider').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    responsive: [{
+      breakpoint: 1366,
+      settings: {
+        slidesToShow: 1,
+      }
+    }, {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        prevArrow: $('.slickCustom-prev'),
+        nextArrow: $('.slickCustom-next'),
+      }
+    }]
+  })
+
   if (window.innerWidth < 361) {
     $('.toggle').on('click', function () {
       $(this).next().slideToggle();
@@ -92,6 +113,19 @@ $(document).ready(function () {
     $('.tabs__content').addClass('active');
     $('.tabs__btns button').removeClass('active');
   })
+
+
+  const addOverlay = function () {
+    $('.slick-slide').removeClass('overlay');
+    $('.slick-current').next().addClass('overlay');
+  }
+
+  if ($('.reviews__slider') !== 0 && window.innerWidth > 1365) {
+    $('.slick-current').next().addClass('overlay');
+    $('.slick-arrow').on('click', function () {
+      addOverlay();
+    })
+  }
 
 
 });
